@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "bucket1" {
-	bucket = "prabhat-first-bucket"
+	bucket = "prabhatkr-first-bucket"
 }
 
 resource "aws_s3_bucket" "bucket2" {
@@ -12,10 +12,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "prabhat-s3bucket-date"
+    bucket         = "prabhatkr-s3bucket-date"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "prabhat-date-dblocks"
+    dynamodb_table = "prabhatkr-date-dblocks"
     encrypt        = true
   }
 }
