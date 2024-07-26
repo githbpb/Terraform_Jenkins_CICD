@@ -12,10 +12,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "prabhatkr-s3bucket-date"
+    bucket         = "prabhatkr-s3bucket-26thjuly"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "prabhatkr-date-dblocks"
+    dynamodb_table = "prabhatkr-26thjuly-dblocks"
     encrypt        = true
   }
 }
